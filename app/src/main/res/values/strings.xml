@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rechercher</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">Rechercher</string>
+    <string name="lieuDepart">Départ</string>
+    <string name="lieuDestination">Destination</string>
+    <string name="DateSearchActivity">Dater</string>
+
+</resources>
