@@ -22,6 +22,7 @@
         <activity android:name=".SearchItineraryActivity" />
         <activity android:name=".ViewSearchItineraryResultsListActivity">
             <activity android:name="activity_search_itinerary" android:label="@string/search" />
+            <activity android:name="Trip_ResultModel"/>
 
         </activity>
     </application>
