@@ -4,6 +4,6 @@
     <string name="search">Rechercher</string>
     <string name="lieuDepart">Départ</string>
     <string name="lieuDestination">Destination</string>
-    <string name="DateSearchActivity">Dater</string>
+    <string name="DateSearchActivity">Date</string>
 
 </resources>
