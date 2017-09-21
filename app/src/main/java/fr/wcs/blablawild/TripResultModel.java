@@ -20,9 +20,7 @@ public class TripResultModel {
         this.departure = departure;
         this.price = price;
 
-
     }
-
 
     public String getFirstName() {
         return this.firstName;
@@ -35,8 +33,6 @@ public class TripResultModel {
     public int getPrice() {
         return this.price;
     }
-
-
 
 }
 

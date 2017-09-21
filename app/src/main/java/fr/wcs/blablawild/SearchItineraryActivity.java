@@ -28,11 +28,12 @@ public class SearchItineraryActivity extends AppCompatActivity {
 
         final EditText depart = (EditText) findViewById(R.id.depart);
         final EditText destination = (EditText) findViewById(R.id.destination);
+        final EditText date = (EditText) findViewById(R.id.date);
 
 
         final Calendar myCalendar = Calendar.getInstance();
             final EditText editText = (EditText) findViewById(R.id.date);
-            final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+            final DatePickerDialog.OnDateSetListener date2 = new DatePickerDialog.OnDateSetListener() {
 
                 public void updateLabel() {
                     String myFormat = "MM/dd/yy"; //In which you need put here
@@ -59,7 +60,7 @@ public class SearchItineraryActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     // TODO Auto-generated method stub
-                    new DatePickerDialog(SearchItineraryActivity.this, date, myCalendar
+                    new DatePickerDialog(SearchItineraryActivity.this, date2, myCalendar
                             .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
                             myCalendar.get(Calendar.DAY_OF_MONTH)).show();
                 }
@@ -80,8 +81,8 @@ public class SearchItineraryActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(SearchItineraryActivity.this,
                             ViewSearchItineraryResultsListActivity.class);
-                    intent.putExtra("departure", depart.getText().toString());
-                    intent.putExtra("destination", destination.getText().toString());
+                    SearchRequestModel requestModel  = new SearchRequestModel(depart.getText().toString(),destination.getText().toString(),myCalendar.getTime());
+                    intent.putExtra("les3",requestModel);
                     startActivity(intent);
 
                 }
