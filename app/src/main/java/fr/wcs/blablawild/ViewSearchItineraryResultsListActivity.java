@@ -19,7 +19,6 @@ public class ViewSearchItineraryResultsListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_search_itinerary_results_list);
 
         // Affiche les paramètres de la recherche dans la barre de titre de ViewSearchItineraryResultsListActivity
-
        // String departure = getIntent().getStringExtra("departure");
        // String destination = getIntent().getStringExtra("destination");
         SearchRequestModel requestModel = getIntent().getExtras().getParcelable("les3");

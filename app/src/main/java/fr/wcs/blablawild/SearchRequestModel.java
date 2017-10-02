@@ -24,10 +24,12 @@ public class SearchRequestModel implements Parcelable{
     }
 
     public String getVilleDepart() {
+
         return villeDepart;
     }
 
     public String getVilleDestination() {
+
         return villeDestination;
     }
 

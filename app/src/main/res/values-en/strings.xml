@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Search</string>
+    <string name="DateSearchActivity">Date</string>
+    <string name="action_settings">Setting</string>
+    <string name="lieuDepart">Departure</string>
+    <string name="lieuDestination">Destination</string>
+    <string name="search">Search</string>
+    <string name="rechercher_un_itineraire">Search itinerary</string>
+</resources>
